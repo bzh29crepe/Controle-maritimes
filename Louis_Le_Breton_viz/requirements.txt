@@ -1,0 +1,3 @@
+streamlit == 2.13.0
+pandas == 2.8.1
+altair == 2.8.2
