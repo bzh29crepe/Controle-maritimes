@@ -5,7 +5,7 @@ import altair as alt
 
 selected_fields = ['type_de_reglementation', 'thematique', 'zone', 'reglementations', 'wkt']
 
-data_set = pd.read_csv(r'statistiques-de-controle-des-peches.csv')
+data_set = pd.read_csv('https://static.data.gouv.fr/resources/statistiques-de-controle-des-peches-1/20231027-031510/statistiques-de-controle-des-peches.csv')
 data_set['date'] = pd.to_datetime(data_set['control_year'].astype(str) + '-' + data_set['control_month'].astype(str), format='%Y-%m')
 
 
